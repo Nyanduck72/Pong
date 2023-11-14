@@ -35,8 +35,8 @@ let ball = {
     y: boardHeight/2,
     width: ballWidth,
     height: ballHeight,
-    velocityX: 1,
-    velocityY: 2 
+    velocityX: 3,
+    velocityY: 4 
 }
 
 // Marcador y puntajes
@@ -109,11 +109,11 @@ function update() { // Funcion recursiva para actualizar cada cuadro
     // Se verifica si la pelota pasó y se añade el punto al jugador correspondiente
     if (ball.x < 0) {
         player2Score++;
-        resetGame(1);
+        resetGame(3);
     }
     else if ((ball.x + ball.width) > board.width) {
         player1Score++;
-        resetGame(-1);
+        resetGame(-3);
     }
 
     // Mostrar el puntaje
@@ -159,6 +159,6 @@ function resetGame(direction) {
         width: ballWidth,
         height: ballHeight,
         velocityX: direction,
-        velocityY: 2
+        velocityY: 4
     }
 }
