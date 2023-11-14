@@ -65,7 +65,7 @@ function update() { // Funcion recursiva para actualizar cada cuadro
     requestAnimationFrame(update);
     context.clearRect(0, 0, board.width, board.height);
 
-    context.fillStyle = "white";
+    context.fillStyle = "blue";
     let nextPlayer1Y = player1.y + player1.velocity;
     if (!outOfBounds(nextPlayer1Y)) {
         player1.y = nextPlayer1Y;
@@ -73,7 +73,7 @@ function update() { // Funcion recursiva para actualizar cada cuadro
     context.fillRect(player1.x, player1.y, player1.width, player1.height);
 
     // Jugador 2
-    context.fillStyle = "white";
+    context.fillStyle = "red";
     let nextPlayer2Y = player2.y + player2.velocity;
     if (!outOfBounds(nextPlayer2Y))  {
         player2.y = nextPlayer2Y;
