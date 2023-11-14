@@ -6,7 +6,7 @@ let boardHeight = 500;
 let context;
 
 // Jugadores
-let playerHeight = 50;
+let playerHeight = 70;
 let playerWidth = 10;
 let playerVelY = 0;
 
